@@ -1,0 +1,17 @@
+.resultado-pesquisa {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.titulo-pesquisa {
+    color: #AE900A;
+    font-size: 18pt;
+    margin-right: 20px;
+}
+
+.p-pesquisa {
+    font-size: 18pt;
+    color: #888;
+    font-weight: 500;
+}
