@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class adm_grps_pgs extends Model
+class adm_products extends Model
 {
     use HasFactory;
+    
 }

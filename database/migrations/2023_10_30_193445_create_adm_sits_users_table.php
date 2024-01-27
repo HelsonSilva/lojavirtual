@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('adm_niveis_acessos', function (Blueprint $table) {
+        Schema::create('adm_sits_users', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->integer('ordem');
+            $table->string('name');
+            $table->unsignedBigInteger('id_adm_cor');
+            $table->foreign('id_adm_cor')->references('id')->on('adm_cors');
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('adm_niveis_acessos');
+        Schema::dropIfExists('adm_sits_users');
     }
 };

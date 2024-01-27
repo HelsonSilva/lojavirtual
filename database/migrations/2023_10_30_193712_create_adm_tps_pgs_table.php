@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('adm_menuses', function (Blueprint $table) {
+        Schema::create('adm_tps_pgs', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->string('icone');
-            $table->int('ordem');
-            $table->int('adms_sit_id');
+            $table->string('tipo');
+            $table->string('name');
+            $table->text('obs');
+            $table->integer('ordem');
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('adm_menuses');
+        Schema::dropIfExists('adm_tps_pgs');
     }
 };

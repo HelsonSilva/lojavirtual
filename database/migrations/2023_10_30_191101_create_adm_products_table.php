@@ -11,10 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('adm_niveis_acessos', function (Blueprint $table) {
+        Schema::create('adm_products', function (Blueprint $table) {
             $table->id();
+            $table->integer('cod');
             $table->string('nome');
-            $table->integer('ordem');
+            $table->double('val',10,2);
+            $table->double('val_prom',10,2);
+            $table->integer('active');
+            $table->text('descr');
+            $table->integer('balance');
+            $table->string('imagem')->nullable();
             $table->timestamps();
         });
     }
@@ -24,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('adm_niveis_acessos');
+        Schema::dropIfExists('adm_products');
     }
 };

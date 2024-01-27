@@ -11,10 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('adm_niveis_acessos', function (Blueprint $table) {
+        Schema::create('sts_carousels', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
+            $table->string('name');
+            $table->string('titulo');
+            $table->string('posicao_text');
+            $table->string('titulo_botao');
+            $table->string('link');
             $table->integer('ordem');
+            $table->integer('adms_cor_id');
+            $table->string('descricao');
+            $table->string('imagem');
             $table->timestamps();
         });
     }
@@ -24,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('adm_niveis_acessos');
+        Schema::dropIfExists('sts_carousels');
     }
 };

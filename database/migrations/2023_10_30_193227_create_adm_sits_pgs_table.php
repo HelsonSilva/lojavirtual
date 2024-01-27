@@ -11,15 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('adm_nivacs_pgs', function (Blueprint $table) {
+        Schema::create('adm_sits_pgs', function (Blueprint $table) {
             $table->id();
-            $table->int('permissao');
-            $table->int('ordem');
-            $table->int('dropdown');
-            $table->int('lib_menu');
-            $table->int('adms_menu_id');
-            $table->int('adms_niveis_acesso_id');
-            $table->int('adms_pagina_id');
+            $table->string('name');
+            $table->string('cor');
             $table->timestamps();
         });
     }
@@ -29,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('adm_nivacs_pgs');
+        Schema::dropIfExists('adm_sits_pgs');
     }
 };

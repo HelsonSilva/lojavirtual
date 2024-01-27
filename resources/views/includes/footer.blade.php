@@ -1,14 +1,7 @@
-<?php
-if (!defined('URL')) {
-    header("Location: /");
-    exit();
-}
-?>
-
 <!--------- RODAPÉ --------->
 <footer class="menu-footer">
     <nav id="nav-menu-footer">
-        <a href="http://localhost:8080/projetoemporio/" class="menu-footer-item  footer-item-home"></a>
+        <a href="http://localhost:8989" class="menu-footer-item  footer-item-home"></a>
         <a href="#" class="menu-footer-item footer-item-categorias"></a>
         <label for="checkbox-carrinho-footer" class="menu-footer-item footer-item-carrinho" onclick="checkCarrinho(), barraProgresso()"></label>
     </nav>
@@ -21,7 +14,7 @@ if (!defined('URL')) {
             <div class="div-carrinho-footer-cadastro">
                 <div class="info-carrinho">
                     <div class="dados-carrinho">
-                        <img src="<?= URL; ?>assets/image/icons-footer/cart-f.png" alt="">
+                        <img src="{{ url('image/icons-footer/cart-f.png') }}" alt="">
                         <div class="dados-carrinho-campos">
                             <p class="p-protocolo" id="mgs-cpf" style="color: red; text-align: center;"></p>
                             <p class="p-protocolo"><strong>Protocolo:</strong> Ao finalizar</p>
@@ -55,7 +48,7 @@ if (!defined('URL')) {
                             ?>
                     
                     <article class="produto-footer" id="produto-carrinho<?= $id; ?>">
-                        <img src="<?= URL; ?>assets/image/products/<?= $id; ?>/img.png" alt="" class="img-produto-footer">
+                        <img src="{{ url('/image/products/<?= $id; ?>/img.png') }}" alt="" class="img-produto-footer">
                         <div class="descricao-produto-footer">
                             <div class="form-produto-footer">
                                 <div class="div-descricao-produto-footer">
@@ -93,18 +86,18 @@ if (!defined('URL')) {
                                 </div>
                             </div>
                         </div>
-						<!--?php
+						<?php
 						if($_SESSION["list"]["total"]>=100){
-						?-->
+						?>
                         <div class="btn-finalizar-carrinho">
                             <label for="checkbox-finalizar" class="btn-finalizar-pedido">Finalizar Pedido</label>
                         </div>
-						<!--?php } else { ?>
+						<?php } else { ?>
 						
 						<div class="btn-finalizar-carrinho">
                             <label for="checkbox-finalizar" class="btn-finalizar-pedido">Pedido Aberto</label>
-                        </div-->
-						<!--?php } ?-->
+                        </div>
+						<?php } ?>
 					
                     </div>   
                 </form>
@@ -138,7 +131,7 @@ if (!defined('URL')) {
             <div class="formas">
                 <h1>Selecione a forma de pagamento:</h1>
                 <div class="pagamentos">
-                    <label for="radio-cartao" id="pagamento-cartao"><img src="<?= URL; ?>assets/image/icons/cartao.png" alt=""><input type="radio" name="formas" id="radio-cartao" class="radio-formas" checked>Cartão</label>
+                    <label for="radio-cartao" id="pagamento-cartao"><img src="{{ url('image/icons/cartao.png') }}" alt=""><input type="radio" name="formas" id="radio-cartao" class="radio-formas" checked>Cartão</label>
                     <div class="cartao">
                         <label for="cred-vista" class="cartao-pagamento" id="lbl-cred-vista" onclick="tipoCartao(0)"><input type="radio" name="tipo-cartao" id="cred-vista" class="input-cartao-pagamento" value="cVista">Crédito a Vista</label>
                         <label for="debito" class="cartao-pagamento" id="lbl-debito" onclick="tipoCartao(1)"><input type="radio" name="tipo-cartao" id="debito" class="input-cartao-pagamento" value="debito">Débito</label>
@@ -146,7 +139,7 @@ if (!defined('URL')) {
                     </div>  
                 </div>
                 <div class="pagamentos">
-                    <label for="radio-dinheiro" id="pagamento-dinheiro"><img src="<?= URL; ?>assets/image/icons/dinheiro.png" alt=""><input type="radio" name="formas" id="radio-dinheiro" class="radio-formas">A vista</label>
+                    <label for="radio-dinheiro" id="pagamento-dinheiro"><img src="{{ url('image/icons/dinheiro.png') }}" alt=""><input type="radio" name="formas" id="radio-dinheiro" class="radio-formas">A vista</label>
                 </div>
                 <label for="" class="dinheiro-troco">Precisa-se de troco?<br><input type="text"></label>
                 <div class="info-finalizar-pedido">
@@ -170,7 +163,7 @@ if (!defined('URL')) {
                 </div>
             </div>
             <div class="mensagem-finalizacao">
-                <img src="<?= URL; ?>assets/image/logo/logo.png" alt="">
+                <img src="{{ url('image/logo/logo.png') }}" alt="">
                 <p class="texto-finalizar">Obrigado pela preferência, seu pedido está sendo processado!</p>
                 <p class="protocolo">Seu nº de protocolo: <br><span>202000031</span></p>
                 <label for="checkbox-mensagem-finalizar">Ok!</label>
@@ -179,9 +172,5 @@ if (!defined('URL')) {
     </div>
 </footer>
 <!------- //RODAPÉ --------->
-<script src="<?= URL; ?>assets/js/banner.js"></script>
-<script src="<?= URL; ?>assets/js/produtos.js"></script>
-<script src="<?= URL; ?>assets/js/jquery.js"></script>
-<script src="<?= URL; ?>assets/js/search.js"></script>
 </body>
 </html>

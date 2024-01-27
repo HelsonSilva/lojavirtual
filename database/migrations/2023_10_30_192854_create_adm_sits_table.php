@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('adm_niveis_acessos', function (Blueprint $table) {
+        Schema::create('adm_sits', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->integer('ordem');
+            $table->string('name');
+            $table->integer('adms_cor_id');
             $table->timestamps();
         });
     }
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('adm_niveis_acessos');
+        Schema::dropIfExists('adm_sits');
     }
 };

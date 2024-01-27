@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('adm_niveis_acessos', function (Blueprint $table) {
+        Schema::create('sts_clients', function (Blueprint $table) {
             $table->id();
-            $table->string('nome');
-            $table->integer('ordem');
+            $table->string('name');
+            $table->integer('cpf');
+            $table->integer('fone');
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('adm_niveis_acessos');
+        Schema::dropIfExists('sts_clients');
     }
 };

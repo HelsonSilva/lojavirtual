@@ -12,13 +12,13 @@ input {
 
 @media screen and (min-width:200px) {
 	#hd-cabecalho {
-		background-color: #171717 !important;
+		background-color: #af1616 !important;
 		padding: 5px;
 		height: 75px;
 		-webkit-transition: all .4s;
 		-o-transition: all .4s;
 		transition: all .4s;
-		background: url(../../assets/image/images/bk_men.png);
+		background: url(image/images/bk_men.png);
 		background-size: 250px;
 		background-attachment: fixed
 	}
@@ -45,7 +45,7 @@ input {
 
 	.lbl-btn-menu {
 		padding: 15px 25px;
-		background: url(../../assets/image/icones/menu/icon_menu.png) center center/40px no-repeat;
+		background: center center/40px no-repeat;
 		display: none
 	}
 
@@ -54,8 +54,9 @@ input {
 	}
 
 	#img-logo-menu {
-		width: 80px;
-		height: 50px
+		width: 70px;
+		height: 50px;
+		margin-right: 10px;
 	}
 
 	#form-pesquisa-menu {
@@ -76,7 +77,7 @@ input {
 		position: absolute;
 		top: 00px;
 		right: 10px;
-		background: url(../../assets/image/icons/icon_pesquisa_menu.png) center center/20px no-repeat;
+		background: url(image/icons/icon_pesquisa_menu.png) center center/20px no-repeat;
 		padding: 10px 15px;
 		border: none
 	}
@@ -101,8 +102,10 @@ input {
 	}
 
 	.lbl-btn-carrinho-menu {
-		padding: 15px 25px;
-		background: url(../../assets/image/icons/icon_carrinho_menu.png) center center/35px no-repeat
+		width: 50px;
+		height: 50px;
+		padding: 8px 15px;
+		background:  url(image/groups/icons/bazar.png) center/35px no-repeat
 	}
 
 	.div-valor-carrinho-topo {
@@ -175,7 +178,7 @@ input {
 	}
 
 	.li-item-categoria-menu:hover {
-		background-color: #272727
+		background-color: #dc2424
 	}
 
 	.link-li-item-categoria {
@@ -228,7 +231,7 @@ input {
 		background-color: #171717 !important;
 		padding: 2%;
 		border-radius: 10px;
-		background: url(../../assets/image/images/bk_men.png);
+		background: url(image/images/bk_men.png);
 		background-size: 250px;
 		background-attachment: fixed;
 		height: 80px;
@@ -300,6 +303,7 @@ input {
 	.texto-politica img {
 		width: 200px;
 		height: 200px;
+		padding: 1%;
 		max-height: none;
 		margin: 0
 	}
@@ -367,7 +371,7 @@ input {
 
 	.div-conteudo-politica p {
 		font-weight: 400;
-		margin: 10px 00px;
+		margin: 10px px;
 		font-size: 10pt;
 		text-align: justify
 	}
@@ -549,19 +553,19 @@ input {
 
 	.btn-adicionar-produto {
 		padding: 15px;
-		background: url(../../assets/image/icons/icon-adicionar.jpg) center center/25px no-repeat;
+		background: url(image/icons/icon-adicionar.jpg) center center/25px no-repeat;
 		border: none
 	}
 
 	.btn-retirar-produto {
 		padding: 15px;
-		background: url(../../assets/image/icons/icon-retirar.jpg) center center/25px no-repeat;
+		background: url(image/icons/icon-retirar.jpg) center center/25px no-repeat;
 		border: none
 	}
 
 	.btn-editar-quantidade {
 		padding: 4px 15px;
-		background: url(../../assets/image/icons/editar-quantidade.png) center center/20px no-repeat;
+		background: url(image/icons/editar-quantidade.png) center center/20px no-repeat;
 		background-color: #f3f3f3 !important;
 		border: none;
 		border-radius: 5px;
@@ -570,7 +574,7 @@ input {
 
 	.btn-excluir-produto {
 		padding: 15px;
-		background: url(../../assets/image/icons/excluir_produto.jpg) center center/25px no-repeat;
+		background: url(image/icons/excluir_produto.jpg) center center/25px no-repeat;
 		border: none;
 		margin-left: 10px
 	}
@@ -581,7 +585,7 @@ input {
 
 	.confirmar-produto {
 		padding: 19px;
-		background: url(../../assets/image/icons/icon-confirmar.jpg) center center/30px no-repeat;
+		background: url(image/icons/icon-confirmar.jpg) center center/30px no-repeat;
 		border: none;
 		margin-left: 10px
 	}
@@ -600,7 +604,7 @@ input {
 
 	.produto-btn-carrinho {
 		padding: 20px;
-		background: url(../../assets/image/icons/carrinho-produtos.png) center center/35px no-repeat;
+		background: url(image/icons/carrinho-produtos.png) center center/35px no-repeat;
 		-ms-flex-item-align: center;
 		-ms-grid-row-align: center;
 		align-self: center
@@ -637,17 +641,17 @@ input {
 
 	.footer-item-home {
 		padding: 15px;
-		background: url(../../assets/image/icons-footer/icon-home-selecionado.png) center center/25px no-repeat
+		background: url(image/icons-footer/icon-home-selecionado.png) center center/25px no-repeat
 	}
 
 	.footer-item-categorias {
 		padding: 15px;
-		background: url(../../assets/image/icons-footer/icon-footer-categoria.png) center center/35px no-repeat
+		background: url(image/icons-footer/icon-footer-categoria.png) center center/35px no-repeat
 	}
 
 	.footer-item-carrinho {
 		padding: 15px;
-		background: url(../../assets/image/icons-footer/icon-footer-carrinho.png) center center/32px no-repeat
+		background: url(image/icons-footer/icon-footer-carrinho.png) center center/32px no-repeat
 	}
 
 	#checkbox-carrinho-footer {
@@ -709,7 +713,7 @@ input {
 
 	.div-carrinho-footer-cadastro {
 		height: 30vh;
-		background: url(../../assets/image/images/bk-carrinho-footer.jpg) center center/cover no-repeat;
+		background: url(image/images/bk-carrinho-footer.jpg) center center/cover no-repeat;
 		position: relative;
 		max-height: 220px;
 		min-height: 200px
@@ -894,7 +898,7 @@ input {
 		border-radius: 5px;
 		-webkit-box-shadow: 00px 00px 2px rgba(0, 0, 0, .3);
 		box-shadow: 00px 00px 2px rgba(0, 0, 0, .3);
-		background: url(../imagens/bk_menu.png);
+		background: url(image/images/bk_men.png);
 		background-size: 80%;
 		background-attachment: fixed;
 		background-position: center;
@@ -1632,7 +1636,7 @@ input {
 	}
 
 	.confirmar-produto {
-		background: url(../../assets/image/icons/btn-confirmar.png) center center/96% no-repeat;
+		background: url(../../public/image/icons/btn-confirmar.png) center center/96% no-repeat;
 		width: 125px;
 		margin-top: 18px;
 		margin-left: 0;
@@ -1641,7 +1645,7 @@ input {
 	}
 
 	.confirmar-produto-carrinho {
-		background: url(../../assets/image/icons/icon-confirmar.jpg) center center/30px no-repeat
+		background: url(../../public/image/icons/icon-confirmar.jpg) center center/30px no-repeat
 	}
 
 	.div-img-ofertas {

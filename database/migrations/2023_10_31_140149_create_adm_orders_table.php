@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('adm_orders', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInterge('id_client');
-            $table->int('status');
-            $table->int('type');
+            $table->integer('status');
+            $table->integer('type');
             $table->double('vl_total',10,2);
-            $table->int('type_pay');
+            $table->integer('type_pay');
             $table->string('products');
-            $table->foreign('id_client')->references('id')->on('client');
+            $table->unsignedBigInteger('id_client');
+            $table->foreign('id_client')->references('id')->on('sts_clients');
             $table->timestamps();
         });
     }

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Site\SiteController;
+use App\Http\Controllers\ProdutoControler;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::resource('/', ProdutoControler::class);
 
-Route::get('/',[SiteController::class,'home']);
+/*Route::get('/',[SiteController::class,'home'])->name('home');*/
 
